@@ -1,50 +1,90 @@
-body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
+:root {
+  --accent: #a10b2b;
+  --highlight: #ffffff;
+  --header: #003e83;
 }
+.mission-badge {
+  border: 1px solid var(--accent);
+}
+
+body {
+    background-color: #000000;
+    color: #d1d5db;
+    font-family: 'Courier New', monospace;
+    line-height: 1.8;
+    margin: 0;
+    padding: 3rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 
 nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
+nav a {
+    color: var(--header);
     text-decoration: none;
-    font-size: 1.2em;
+    text-transform: uppercase;
+    font-size: 20px;
+
 }
 
-h1 {
-    font-size: 8em;
-    letter-spacing: -2px;
+
+h1, h2, h3 {
+    color:var(--header);
+    border-bottom: 1px solid #1a1e26;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+.sensor-block {
+    background: #0f172a;
+    border-left: 4px solid #00d4ff;
+    padding: 1rem;
+    margin: 2rem 0;
+    font-size: 0.9rem;
 }
 
-img.about {
-    opacity: 0.5;
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #1a1e26;
+    margin: 2rem 0;
+}
+
+
+img {
+   max-width: 100%;    
+    width: 800px;       
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.4);
+
+}
+
+
+
+a, a:visited {
+  color: var(--accent) !important;
+  text-decoration: none;
+  font-weight: bold;            
+}
+
+a:hover {
+  color: var(--highlight) !important; 
+  text-shadow: 0 0 5px var(--highlight);
+  text-decoration: underline;
 }
